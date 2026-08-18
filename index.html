@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>RD Travels Jaipur | Rajasthan Taxi & Tour Service</title>
+
+<meta name="description"
+content="RD Travels Jaipur - Taxi service, Rajasthan tours, airport transfers and outstation cab services.">
+
+<style>
+
+/* =========================
+   BASIC
+========================= */
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    width:100%;
+    overflow-x:hidden;
+    scroll-behavior:smooth;
+}
+
+body{
+    width:100%;
+    margin:0;
+    padding:0;
+    font-family:Arial,sans-serif;
+    color:#171717;
+    background:#fff;
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    width:100%;
+    min-height:65px;
+    padding:12px 6%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:#111;
+    position:relative;
+    z-index:100;
+}
+
+.logo{
+    color:white;
+    font-size:22px;
+    font-weight:800;
+}
+
+.logo span{
+    color:#ffb400;
+}
+
+.logo small{
+    display:block;
+    color:#aaa;
+    font-size:9px;
+    letter-spacing:3px;
+    text-align:center;
+}
+
+.navbar nav{
+    display:flex;
+    gap:25px;
+}
+
+.navbar nav a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:600;
+}
+
+.navbar nav a:hover{
+    color:#ffb400;
+}
+
+.menu-btn{
+    display:none;
+    background:none;
+    border:0;
+    color:white;
+    font-size:27px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    width:100%;
+    background:#111;
+}
+
+.hero-image{
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+.hero-image img{
+    display:block;
+    width:100%;
+    max-width:100%;
+    height:auto;
+    object-fit:contain;
+}
+
+.hero-content{
+    width:100%;
+    padding:45px 20px;
+    background:linear-gradient(180deg,#111,#1b1b1b);
+    color:white;
+    text-align:center;
+    border-top:2px solid #ffb400;
+}
+
+.welcome{
+    display:inline-block;
+    color:#ffb400;
+    font-size:12px;
+    font-weight:bold;
+    letter-spacing:2px;
+    padding:7px 14px;
+    border:1px solid #806000;
+    border-radius:30px;
+}
+
+.hero h1{
+    margin:18px 0 15px;
+    font-size:40px;
+    line-height:1.2;
+}
+
+.hero h1 span{
+    color:#ffb400;
+}
+
+.hero-text{
+    max-width:600px;
+    margin:0 auto 25px;
+    color:#ccc;
+    line-height:1.6;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 25px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.whatsapp{
+    background:#25d366;
+    color:white;
+}
+
+.call{
+    background:#ffb400;
+    color:#111;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features{
+    width:100%;
+    max-width:1150px;
+    margin:auto;
+    padding:35px 20px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+}
+
+.feature{
+    text-align:center;
+    padding:20px 10px;
+}
+
+.feature div{
+    font-size:30px;
+}
+
+.feature h3{
+    font-size:16px;
+    margin:10px 0 6px;
+}
+
+.feature p{
+    margin:0;
+    color:#777;
+    font-size:13px;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section{
+    width:100%;
+    padding:60px 20px;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.section-heading p{
+    color:#d99a00;
+    font-size:11px;
+    font-weight:bold;
+    letter-spacing:2px;
+    margin:0 0 8px;
+}
+
+.section-heading h2{
+    font-size:32px;
+    margin:0;
+}
+
+.section-heading h2 span{
+    color:#e39b00;
+}
+
+.line{
+    width:55px;
+    height:3px;
+    background:#ffb400;
+    margin:12px auto 0;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.service-grid{
+    width:100%;
+    max-width:1150px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.service-card{
+    background:white;
+    padding:28px 18px;
+    text-align:center;
+    border-radius:14px;
+    border:1px solid #eee;
+    box-shadow:0 7px 22px rgba(0,0,0,.07);
+}
+
+.service-icon{
+    width:60px;
+    height:60px;
+    margin:0 auto 15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:#fff7df;
+    font-size:28px;
+}
+
+.service-card h3{
+    margin:0 0 8px;
+    font-size:18px;
+}
+
+.service-card p{
+    margin:0;
+    color:#777;
+    font-size:13px;
+    line-height:1.5;
+}
+
+
+/* =========================
+   CARS
+========================= */
+
+.cars-section{
+    background:#f8f8f8;
+}
+
+.car-grid{
+    width:100%;
+    max-width:1150px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.car-card{
+    width:100%;
+    background:white;
+    border-radius:14px;
+    overflow:hidden;
+    border:1px solid #eee;
+    box-shadow:0 7px 22px rgba(0,0,0,.08);
+}
+
+.car-card > img{
+    display:block;
+    width:100%;
+    height:210px;
+    object-fit:contain;
+    background:#f4f4f4;
+}
+
+.car-info{
+    padding:17px;
+}
+
+.car-info h3{
+    margin:0 0 7px;
+    font-size:20px;
+}
+
+.car-info p{
+    margin:0 0 10px;
+    color:#666;
+    font-size:13px;
+}
+
+.car-info span{
+    display:block;
+    color:#d99a00;
+    font-size:19px;
+    font-weight:800;
+    margin-bottom:12px;
+}
+
+.book-btn{
+    display:block;
+    width:100%;
+    padding:11px;
+    background:#111;
+    color:white;
+    text-align:center;
+    text-decoration:none;
+    border-radius:7px;
+    font-weight:bold;
+}
+
+.price-note{
+    text-align:center;
+    color:#888;
+    font-size:11px;
+    margin:25px 0 0;
+}
+
+
+/* =========================
+   TOURS
+========================= */
+
+.tour-grid{
+    width:100%;
+    max-width:1150px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.tour-card{
+    background:white;
+    border-radius:14px;
+    overflow:hidden;
+    border:1px solid #eee;
+    box-shadow:0 7px 22px rgba(0,0,0,.08);
+}
+
+.tour-image{
+    width:100%;
+    height:220px;
+    position:relative;
+    display:flex;
+    align-items:flex-end;
+    padding:18px;
+    background-size:cover;
+    background-position:center;
+}
+
+.tour-image:after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(transparent,rgba(0,0,0,.8));
+}
+
+.tour-image h3{
+    position:relative;
+    z-index:2;
+    color:white;
+    margin:0;
+    font-size:24px;
+}
+
+.jaipur{
+    background-image:url("images/jaipur.jpg");
+}
+
+.udaipur{
+    background-image:url("images/udaipur.jpg");
+}
+
+.jaisalmer{
+    background-image:url("images/jaisalmer.jpg");
+}
+
+.jodhpur{
+    background-image:url("images/jodhpur.jpg");
+}
+
+.tour-card > p{
+    text-align:center;
+    color:#666;
+    font-size:13px;
+    padding:12px 5px;
+    margin:0;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-section{
+    width:100%;
+    padding:65px 20px;
+    background:#111;
+    color:white;
+}
+
+.about-content{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+}
+
+.small-title{
+    color:#ffb400;
+    font-size:12px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.about-content h2{
+    font-size:34px;
+}
+
+.about-content h2 span{
+    color:#ffb400;
+}
+
+.about-content p{
+    color:#ccc;
+    line-height:1.7;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-section{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.contact-section h2{
+    font-size:30px;
+}
+
+.contact-buttons{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#080808;
+    color:#aaa;
+    text-align:center;
+    padding:25px 15px;
+    font-size:12px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+    .navbar{
+        padding:11px 16px;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .navbar nav{
+        display:none;
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        background:#111;
+        padding:18px;
+        flex-direction:column;
+        gap:16px;
+        text-align:center;
+    }
+
+    .navbar nav.show{
+        display:flex;
+    }
+
+    /* HERO */
+
+    .hero-image img{
+        width:100%;
+        height:auto;
+        object-fit:contain;
+    }
+
+    .hero-content{
+        padding:30px 15px 35px;
+    }
+
+    .hero h1{
+        font-size:30px;
+    }
+
+    .hero-text{
+        font-size:14px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .btn{
+        width:100%;
+        max-width:300px;
+    }
+
+    /* FEATURES */
+
+    .features{
+        grid-template-columns:repeat(2,1fr);
+        padding:30px 10px;
+        gap:8px;
+    }
+
+    .feature{
+        padding:15px 5px;
+    }
+
+    .feature h3{
+        font-size:14px;
+    }
+
+    .feature p{
+        font-size:11px;
+    }
+
+    /* SECTION */
+
+    .section{
+        padding:45px 12px;
+    }
+
+    .section-heading h2{
+        font-size:27px;
+    }
+
+    /* SERVICES */
+
+    .service-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:10px;
+    }
+
+    .service-card{
+        padding:18px 8px;
+        border-radius:10px;
+    }
+
+    .service-icon{
+        width:48px;
+        height:48px;
+        font-size:22px;
+        margin-bottom:9px;
+    }
+
+    .service-card h3{
+        font-size:15px;
+    }
+
+    .service-card p{
+        font-size:10px;
+        line-height:1.4;
+    }
+
+    /* CARS */
+
+    .car-grid{
+        grid-template-columns:1fr;
+        gap:16px;
+    }
+
+    .car-card > img{
+        width:100%;
+        height:auto;
+        max-height:230px;
+        object-fit:contain;
+    }
+
+    .car-info{
+        padding:14px;
+    }
+
+    .car-info h3{
+        font-size:18px;
+    }
+
+    /* TOURS */
+
+    .tour-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:10px;
+    }
+
+    .tour-image{
+        height:150px;
+        padding:11px;
+    }
+
+    .tour-image h3{
+        font-size:18px;
+    }
+
+    .tour-card > p{
+        font-size:10px;
+        padding:9px 3px;
+    }
+
+    /* ABOUT */
+
+    .about-section{
+        padding:45px 15px;
+    }
+
+    .about-content h2{
+        font-size:27px;
+    }
+
+}
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media(max-width:380px){
+
+    .hero h1{
+        font-size:27px;
+    }
+
+    .features{
+        gap:5px;
+    }
+
+    .tour-image{
+        height:135px;
+    }
+
+    .tour-image h3{
+        font-size:16px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+    <div class="logo">
+        <span>RD</span> TRAVELS
+        <small>JAIPUR</small>
+    </div>
+
+    <button class="menu-btn"
+            onclick="toggleMenu()">☰</button>
+
+    <nav id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#cars">Cars</a>
+        <a href="#tours">Tours</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section id="home" class="hero">
+
+    <div class="hero-image">
+        <img src="images/hero.jpg"
+             alt="RD Travels Jaipur">
+    </div>
+
+    <div class="hero-content">
+
+        <p class="welcome">
+            WELCOME TO RD TRAVELS JAIPUR
+        </p>
+
+        <h1>
+            Explore Rajasthan
+            <br>
+            <span>With Comfort & Trust</span>
+        </h1>
+
+        <p class="hero-text">
+            Your journey begins with us. Enjoy safe,
+            comfortable and reliable taxi services
+            across Jaipur & Rajasthan.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="https://wa.me/917023270310"
+               class="btn whatsapp">
+                💬 Book on WhatsApp
+            </a>
+
+            <a href="tel:+917023270310"
+               class="btn call">
+                📞 Call Now
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FEATURES -->
+
+<section class="features">
+
+    <div class="feature">
+        <div>🚕</div>
+        <h3>Comfortable Cars</h3>
+        <p>Clean & well-maintained vehicles.</p>
+    </div>
+
+    <div class="feature">
+        <div>🛡️</div>
+        <h3>Safe Journey</h3>
+        <p>Your safety is our priority.</p>
+    </div>
+
+    <div class="feature">
+        <div>⭐</div>
+        <h3>Trusted Service</h3>
+        <p>Professional travel experience.</p>
+    </div>
+
+    <div class="feature">
+        <div>📍</div>
+        <h3>Rajasthan Expert</h3>
+        <p>Explore Rajasthan with locals.</p>
+    </div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section id="services" class="section">
+
+    <div class="section-heading">
+
+        <p>WHAT WE OFFER</p>
+
+        <h2>
+            Our <span>Services</span>
+        </h2>
+
+        <div class="line"></div>
+
+    </div>
+
+    <div class="service-grid">
+
+        <div class="service-card">
+            <div class="service-icon">🚖</div>
+            <h3>Local Taxi</h3>
+            <p>
+                Comfortable taxi service for Jaipur
+                sightseeing and city travel.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🛣️</div>
+            <h3>Outstation Taxi</h3>
+            <p>
+                Travel anywhere in Rajasthan and
+                nearby states.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">✈️</div>
+            <h3>Airport Transfer</h3>
+            <p>
+                Reliable pickup and drop service from
+                Jaipur Airport.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🏰</div>
+            <h3>Rajasthan Tours</h3>
+            <p>
+                Customized tour packages for families,
+                couples and groups.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CARS -->
+
+<section id="cars" class="section cars-section">
+
+    <div class="section-heading">
+
+        <p>OUR FLEET</p>
+
+        <h2>
+            Choose Your <span>Ride</span>
+        </h2>
+
+        <div class="line"></div>
+
+    </div>
+
+    <div class="car-grid">
+
+
+        <div class="car-card">
+
+            <img src="images/dzire.jpg"
+                 alt="Swift Dzire Taxi">
+
+            <div class="car-info">
+
+                <h3>Swift Dzire</h3>
+
+                <p>👥 4+1 Seats &nbsp; ❄️ AC</p>
+
+                <span>₹11/km*</span>
+
+                <a href="https://wa.me/917023270310?text=Hello%20RD%20Travels%2C%20I%20want%20to%20book%20Dzire."
+                   class="book-btn">
+                    Book Now
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="car-card">
+
+            <img src="images/ertiga.jpg"
+                 alt="Maruti Ertiga Taxi">
+
+            <div class="car-info">
+
+                <h3>Maruti Ertiga</h3>
+
+                <p>👥 6+1 Seats &nbsp; ❄️ AC</p>
+
+                <span>₹14/km*</span>
+
+                <a href="https://wa.me/917023270310?text=Hello%20RD%20Travels%2C%20I%20want%20to%20book%20Ertiga."
+                   class="book-btn">
+                    Book Now
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="car-card">
+
+            <img src="images/carens.jpg"
+                 alt="Kia Carens Taxi">
+
+            <div class="car-info">
+
+                <h3>Kia Carens</h3>
+
+                <p>👥 6+1 Seats &nbsp; ❄️ AC</p>
+
+                <span>₹14/km*</span>
+
+                <a href="https://wa.me/917023270310?text=Hello%20RD%20Travels%2C%20I%20want%20to%20book%20Kia%20Carens."
+                   class="book-btn">
+                    Book Now
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="car-card">
+
+            <img src="images/crysta.jpg"
+                 alt="Innova Crysta Taxi">
+
+            <div class="car-info">
+
+                <h3>Innova Crysta</h3>
+
+                <p>👥 6+1 Seats &nbsp; ❄️ AC</p>
+
+                <span>₹18/km*</span>
+
+                <a href="https://wa.me/917023270310?text=Hello%20RD%20Travels%2C%20I%20want%20to%20book%20Innova%20Crysta."
+                   class="book-btn">
+                    Book Now
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="car-card">
+
+            <img src="images/hycross.jpg"
+                 alt="Innova Hycross Taxi">
+
+            <div class="car-info">
+
+                <h3>Innova Hycross</h3>
+
+                <p>👥 Premium &nbsp; ❄️ AC</p>
+
+                <span>₹19/km*</span>
+
+                <a href="https://wa.me/917023270310?text=Hello%20RD%20Travels%2C%20I%20want%20to%20book%20Innova%20Hycross."
+                   class="book-btn">
+                    Book Now
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <p class="price-note">
+        *Rates may vary according to route, date and trip requirements.
+    </p>
+
+</section>
+
+
+<!-- RAJASTHAN TOURS -->
+
+<!-- ================= RAJASTHAN TOURS ================= -->
+
+<section id="tours" class="section">
+
+    <div class="section-heading">
+
+        <p>DISCOVER THE ROYAL LAND</p>
+
+        <h2>
+            Popular <span>Rajasthan Tours</span>
+        </h2>
+
+        <div class="line"></div>
+
+    </div>
+
+
+    <div class="tour-grid">
+
+
+        <!-- JAIPUR -->
+
+        <div class="tour-card">
+
+            <div class="tour-image jaipur">
+                <h3>Jaipur</h3>
+            </div>
+
+            <div class="tour-details">
+
+                <h4>🌸 Pink City of Rajasthan</h4>
+
+                <p>
+                    Explore the royal beauty of Jaipur with
+                    historic forts, beautiful palaces and
+                    colourful markets.
+                </p>
+
+                <ul>
+                    <li>🏰 Amber Fort</li>
+                    <li>🏯 City Palace</li>
+                    <li>📸 Hawa Mahal</li>
+                    <li>🌅 Jal Mahal</li>
+                    <li>🛍️ Local Shopping</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- UDAIPUR -->
+
+        <div class="tour-card">
+
+            <div class="tour-image udaipur">
+                <h3>Udaipur</h3>
+            </div>
+
+            <div class="tour-details">
+
+                <h4>💙 City of Lakes</h4>
+
+                <p>
+                    Enjoy the romantic lakes, royal palaces
+                    and beautiful views of Udaipur.
+                </p>
+
+                <ul>
+                    <li>🏰 City Palace</li>
+                    <li>🌊 Lake Pichola</li>
+                    <li>🚤 Boat Ride</li>
+                    <li>🌅 Fateh Sagar Lake</li>
+                    <li>🏯 Sajjangarh Palace</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- JAISALMER -->
+
+        <div class="tour-card">
+
+            <div class="tour-image jaisalmer">
+                <h3>Jaisalmer</h3>
+            </div>
+
+            <div class="tour-details">
+
+                <h4>🏜️ Golden City</h4>
+
+                <p>
+                    Experience the golden desert, historic
+                    fort and exciting desert safari.
+                </p>
+
+                <ul>
+                    <li>🏰 Jaisalmer Fort</li>
+                    <li>🐪 Camel Safari</li>
+                    <li>🏜️ Sam Sand Dunes</li>
+                    <li>🎶 Desert Camp</li>
+                    <li>🌅 Sunset View</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- JODHPUR -->
+
+        <div class="tour-card">
+
+            <div class="tour-image jodhpur">
+                <h3>Jodhpur</h3>
+            </div>
+
+            <div class="tour-details">
+
+                <h4>💙 Blue City</h4>
+
+                <p>
+                    Discover the magnificent Mehrangarh Fort,
+                    royal history and beautiful blue streets.
+                </p>
+
+                <ul>
+                    <li>🏰 Mehrangarh Fort</li>
+                    <li>🏯 Umaid Bhawan Palace</li>
+                    <li>📸 Blue City View</li>
+                    <li>🛍️ Local Market</li>
+                    <li>🍛 Rajasthani Food</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="about-section">
+
+    <div class="about-content">
+
+        <p class="small-title">
+            WHY RD TRAVELS?
+        </p>
+
+        <h2>
+            More Than A Ride,
+            <br>
+            <span>It's A Journey.</span>
+        </h2>
+
+        <p>
+            RD Travels Jaipur is your trusted travel partner
+            for exploring Rajasthan. From Jaipur sightseeing
+            to long-distance Rajasthan tours, we provide
+            comfortable cars, experienced drivers and
+            reliable service.
+        </p>
+
+        <p>
+            Explore the royal forts of Jaipur, beautiful lakes
+            of Udaipur, golden desert of Jaisalmer and the
+            blue streets of Jodhpur with RD Travels.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact-section">
+
+    <h2>
+        Ready To <span style="color:#e39b00;">
+        Explore Rajasthan?</span>
+    </h2>
+
+    <p>
+        Book your taxi with RD Travels Jaipur today.
+    </p>
+
+    <div class="contact-buttons">
+
+        <a href="https://wa.me/917023270310"
+           class="btn whatsapp">
+            💬 WhatsApp Us
+        </a>
+
+        <a href="tel:+917023270310"
+           class="btn call">
+            📞 Call Now
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    © 2026 RD Travels Jaipur.
+    All Rights Reserved.
+
+</footer>
+
+
+<script>
+
+function toggleMenu(){
+
+    const menu =
+        document.getElementById("navMenu");
+
+    menu.classList.toggle("show");
+
+}
+
+document.querySelectorAll("#navMenu a")
+.forEach(function(link){
+
+    link.addEventListener("click",function(){
+
+        document
+        .getElementById("navMenu")
+        .classList.remove("show");
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
